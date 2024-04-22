@@ -4,14 +4,17 @@ import mongoose from "mongoose";
 import bookRoute from './routes/book.routes.js'
 import userRoute  from './routes/user.route.js'
 import cors from "cors";
+const corsConfig={
+  origin:["*"],
+  methods:["POST","GET"],
+  credentials:true
+}
 const app=express();
-app.use(cors(
-  {
-    origin:["*"],
-    methods:["POST","GET"],
-    credentials:true
-  }
+c
+app.use(cors(corsConfig
+  
 ));
+app.options(cors(corsConfig))
 app.use(express.json())
 dotenv.config();
 
