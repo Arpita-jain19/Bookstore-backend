@@ -10,7 +10,7 @@ const corsConfig={
   credentials:true
 }
 const app=express();
-c
+
 app.use(cors(corsConfig
   
 ));
