@@ -16,7 +16,7 @@ app.use(express.json())
 dotenv.config();
 
 const port = process.env.port||4000;
-const URI = process.env.URI || "mongodb+srv://jainarpita56:Arpita19@cluster0.fp48pgw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const URI = process.env.URI || "mongodb+srv://jainarpita56:Arpita19@cluster0.fp48pgw.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0";
 
 try{
     mongoose.connect(URI);
